@@ -461,74 +461,12 @@
             letter-spacing: 1px;
         }
 
-        .profile-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 20px;
-            align-items: start;
-        }
-
-        @media (min-width: 768px) {
-            .profile-grid {
-                grid-template-columns: 180px 1fr;
-            }
-        }
-
-        @media (min-width: 1024px) {
-            .profile-grid {
-                grid-template-columns: 180px 1fr 220px;
-            }
-        }
-
-        .photo-container {
-            text-align: center;
-            justify-self: center;
-        }
-
-        .photo-placeholder {
-            width: 160px;
-            height: 180px;
-            border: 3px dashed #3b82f6;
-            border-radius: 15px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background: rgba(30, 64, 175, 0.1);
-            color: #3b82f6;
-            font-size: 10px;
-            text-align: center;
-            margin-bottom: 12px;
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-
-        .photo-placeholder:hover {
-            background: rgba(30, 64, 175, 0.2);
-            border-color: #60a5fa;
-        }
-
-        .upload-btn {
-            background: linear-gradient(45deg, #1e40af, #1e3a8a);
-            color: white;
-            border: none;
-            padding: 8px 14px;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 10px;
-            font-weight: bold;
-            transition: all 0.3s ease;
-        }
-
-        .upload-btn:hover {
-            background: linear-gradient(45deg, #1e3a8a, #1e40af);
-            transform: scale(1.05);
-        }
-
         .bio-data {
             display: grid;
             grid-template-columns: 1fr;
             gap: 12px;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         @media (min-width: 640px) {
@@ -556,38 +494,6 @@
             font-size: 12px;
             font-weight: 600;
             color: #e5e7eb;
-        }
-
-        .graph-container {
-            background: rgba(0, 0, 0, 0.4);
-            border: 2px dashed #3b82f6;
-            border-radius: 15px;
-            height: 200px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: #3b82f6;
-            font-size: 10px;
-            text-align: center;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            justify-self: center;
-            width: 100%;
-            max-width: 220px;
-        }
-
-        @media (max-width: 1023px) {
-            .graph-container {
-                grid-column: 1 / -1;
-                max-width: 100%;
-                height: 250px;
-            }
-        }
-
-        .graph-container:hover {
-            background: rgba(30, 64, 175, 0.1);
-            border-color: #60a5fa;
         }
 
         /* Evidence Tables - Mobile Optimized */
@@ -761,44 +667,6 @@
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 1px;
-        }
-
-        .chart-placeholder {
-            height: 250px;
-            border: 2px dashed #3b82f6;
-            border-radius: 15px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background: rgba(30, 64, 175, 0.05);
-            color: #3b82f6;
-            font-size: 11px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .chart-placeholder:hover {
-            background: rgba(30, 64, 175, 0.1);
-            border-color: #60a5fa;
-        }
-
-        .upload-chart-btn {
-            background: linear-gradient(45deg, #1e40af, #1e3a8a);
-            color: white;
-            border: none;
-            padding: 8px 16px;
-            border-radius: 10px;
-            cursor: pointer;
-            font-weight: bold;
-            margin-top: 12px;
-            transition: all 0.3s ease;
-            font-size: 10px;
-        }
-
-        .upload-chart-btn:hover {
-            background: linear-gradient(45deg, #1e3a8a, #1e40af);
-            transform: scale(1.05);
         }
 
         /* Footer - Mobile Optimized */
@@ -1078,61 +946,60 @@
                 </div>
                 
                 <!-- Subject Profile Tab -->
-               
-                            
-                            <div class="bio-data">
-                                <div class="bio-field">
-                                    <div class="bio-label">Full Name</div>
-                                    <div class="bio-value">SAAD DRISSI</div>
-                                </div>
-                                <div class="bio-field">
-                                    <div class="bio-label">Email Address</div>
-                                    <div class="bio-value">Saad.drissi01@gmail.com</div>
-                                </div>
-                                <div class="bio-field">
-                                    <div class="bio-label">Google ID</div>
-                                    <div class="bio-value">118133189701512132156</div>
-                                </div>
-                                <div class="bio-field">
-                                    <div class="bio-label">Date of Birth</div>
-                                    <div class="bio-value">MARCH 18, 1985 (AGE: 40)</div>
-                                </div>
-                                <div class="bio-field">
-                                    <div class="bio-label">Current IP</div>
-                                    <div class="bio-value">105.74.141.216</div>
-                                </div>
-                                <div class="bio-field">
-                                    <div class="bio-label">Work Phone</div>
-                                    <div class="bio-value">+212662620884</div>
-                                </div>
-                                <div class="bio-field">
-                                    <div class="bio-label">Employer</div>
-                                    <div class="bio-value">TORO RESTAURANT</div>
-                                </div>
-                                <div class="bio-field">
-                                    <div class="bio-label">Nationality</div>
-                                    <div class="bio-value">MOROCCAN</div>
-                                </div>
-                                <div class="bio-field">
-                                    <div class="bio-label">Location</div>
-                                    <div class="bio-value">MARRAKECH, MOROCCO</div>
-                                </div>
-                                <div class="bio-field">
-                                    <div class="bio-label">ISP Provider</div>
-                                    <div class="bio-value">WANA CORPORATE</div>
-                                </div>
-                                <div class="bio-field">
-                                    <div class="bio-label">ASN</div>
-                                    <div class="bio-value">AS36884 MAROCCONNECT</div>
-                                </div>
-                                <div class="bio-field">
-                                    <div class="bio-label">Gender</div>
-                                    <div class="bio-value">MALE</div>
-                                </div>
+                <div id="profile" class="tab-content">
+                    <div class="subject-profile">
+                        <div class="profile-header">
+                            <h2>Subject Profile - Digital Identity Analysis</h2>
+                        </div>
+                        
+                        <div class="bio-data">
+                            <div class="bio-field">
+                                <div class="bio-label">Full Name</div>
+                                <div class="bio-value">SAAD DRISSI</div>
                             </div>
-                            
-                            <div class="graph-container">
-                                <div id="network-visualization" style="width: 100%; height: 100%;"></div>
+                            <div class="bio-field">
+                                <div class="bio-label">Email Address</div>
+                                <div class="bio-value">Saad.drissi01@gmail.com</div>
+                            </div>
+                            <div class="bio-field">
+                                <div class="bio-label">Google ID</div>
+                                <div class="bio-value">118133189701512132156</div>
+                            </div>
+                            <div class="bio-field">
+                                <div class="bio-label">Date of Birth</div>
+                                <div class="bio-value">MARCH 18, 1985 (AGE: 40)</div>
+                            </div>
+                            <div class="bio-field">
+                                <div class="bio-label">Current IP</div>
+                                <div class="bio-value">105.74.141.216</div>
+                            </div>
+                            <div class="bio-field">
+                                <div class="bio-label">Work Phone</div>
+                                <div class="bio-value">+212662620884</div>
+                            </div>
+                            <div class="bio-field">
+                                <div class="bio-label">Employer</div>
+                                <div class="bio-value">TORO RESTAURANT</div>
+                            </div>
+                            <div class="bio-field">
+                                <div class="bio-label">Nationality</div>
+                                <div class="bio-value">MOROCCAN</div>
+                            </div>
+                            <div class="bio-field">
+                                <div class="bio-label">Location</div>
+                                <div class="bio-value">MARRAKECH, MOROCCO</div>
+                            </div>
+                            <div class="bio-field">
+                                <div class="bio-label">ISP Provider</div>
+                                <div class="bio-value">WANA CORPORATE</div>
+                            </div>
+                            <div class="bio-field">
+                                <div class="bio-label">ASN</div>
+                                <div class="bio-value">AS36884 MAROCCONNECT</div>
+                            </div>
+                            <div class="bio-field">
+                                <div class="bio-label">Gender</div>
+                                <div class="bio-value">MALE</div>
                             </div>
                         </div>
                     </div>
@@ -1325,23 +1192,17 @@
                         
                         <div class="charts-grid">
                             <div class="chart-card">
-                                <div class="chart-title">Network Timeline</div>
-                                <div class="chart-placeholder" onclick="uploadChart('timeline')">
-                                    📈 INFRASTRUCTURE ANALYSIS<br>
-                                    <small>Timeline showing IP categorization<br>
-                                    and network infrastructure evolution</small>
+                                <div class="chart-title">Network Infrastructure Timeline</div>
+                                <div class="alert-box alert-info" style="margin: 0;">
+                                    <strong>📈 HISTORICAL ANALYSIS:</strong> IP categorization changes from 2020-2025. Regional Internet Registry updates tracked. Dynamic IP classification removed in 2021.
                                 </div>
-                                <button class="upload-chart-btn" onclick="uploadChart('timeline')">UPLOAD TIMELINE</button>
                             </div>
                             
                             <div class="chart-card">
-                                <div class="chart-title">Digital Footprint</div>
-                                <div class="chart-placeholder" onclick="uploadChart('network')">
-                                    🔗 NETWORK MAP<br>
-                                    <small>Complete visualization of digital<br>
-                                    connections and relationships</small>
+                                <div class="chart-title">Digital Footprint Summary</div>
+                                <div class="alert-box alert-warning" style="margin: 0;">
+                                    <strong>🔗 CONNECTION MAP:</strong> Email connected to 8 platforms, 2 breaches, workplace phone, and network infrastructure through AS36884.
                                 </div>
-                                <button class="upload-chart-btn" onclick="uploadChart('network')">UPLOAD MAP</button>
                             </div>
                         </div>
                     </div>
@@ -1511,10 +1372,6 @@
             if (accessCode === 'm.s.gdoxp') {
                 document.getElementById('login-page').style.display = 'none';
                 document.getElementById('main-application').style.display = 'block';
-                
-                setTimeout(() => {
-                    initNetworkGraph();
-                }, 500);
             } else {
                 errorMsg.style.display = 'block';
                 document.getElementById('access-code').value = '';
@@ -1543,153 +1400,6 @@
             event.target.classList.add('active');
         }
         
-        function uploadPhoto() {
-            alert('📷 PHOTO UPLOAD\n\nIn a real system, this would:\n• Open file browser\n• Accept 2x2 inch photos\n• Store in secure FBI database\n• Run facial recognition');
-        }
-        
-        function uploadChart(type) {
-            const chartTypes = {
-                'timeline': '📈 TIMELINE UPLOAD\n\nBreach timeline visualization\nService creation dates\nRisk exposure over time',
-                'network': '🔗 NETWORK UPLOAD\n\nDigital relationship mapping\nService interconnections\nData flow visualization'
-            };
-            
-            alert(chartTypes[type] || 'Chart upload functionality');
-        }
-        
-        // Network Visualization
-        function initNetworkGraph() {
-            const networkData = {
-                nodes: [
-                    {id: "email", label: "saad.drissi01@gmail.com", type: "Email", group: 1},
-                    {id: "dailymotion", label: "dailymotion.com", type: "Website", group: 2},
-                    {id: "8fit", label: "8fit.com", type: "Website", group: 2},
-                    {id: "wattpad", label: "wattpad.com", type: "Website", group: 3},
-                    {id: "twitter", label: "twitter.com", type: "Website", group: 3},
-                    {id: "avito", label: "avito.ma", type: "Website", group: 3},
-                    {id: "spotify", label: "spotify.com", type: "Website", group: 3},
-                    {id: "amazon", label: "amazon.com", type: "Website", group: 3},
-                    {id: "googleid", label: "Google ID", type: "Profile", group: 4},
-                    {id: "phone", label: "Work Phone", type: "Contact", group: 5},
-                    {id: "ip", label: "IP: 105.74.141.216", type: "Network", group: 6},
-                    {id: "workplace", label: "Toro Restaurant", type: "Location", group: 7},
-                    {id: "birthdate", label: "DOB: 1985-03-18", type: "Personal", group: 8},
-                    {id: "isp", label: "Wana Corporate", type: "Network", group: 6}
-                ],
-                links: [
-                    {source: "email", target: "dailymotion", value: 3, type: "breach"},
-                    {source: "email", target: "8fit", value: 3, type: "breach"},
-                    {source: "email", target: "wattpad", value: 2, type: "account"},
-                    {source: "email", target: "twitter", value: 2, type: "account"},
-                    {source: "email", target: "avito", value: 2, type: "account"},
-                    {source: "email", target: "spotify", value: 2, type: "account"},
-                    {source: "email", target: "amazon", value: 2, type: "account"},
-                    {source: "email", target: "googleid", value: 4, type: "identity"},
-                    {source: "workplace", target: "phone", value: 3, type: "contact"},
-                    {source: "email", target: "ip", value: 2, type: "network"},
-                    {source: "ip", target: "isp", value: 4, type: "infrastructure"},
-                    {source: "email", target: "birthdate", value: 1, type: "personal"}
-                ]
-            };
-
-            const containerWidth = document.getElementById('network-visualization').offsetWidth;
-            const containerHeight = document.getElementById('network-visualization').offsetHeight;
-            const width = Math.max(200, containerWidth - 20);
-            const height = Math.max(180, containerHeight - 20);
-
-            d3.select("#network-visualization").selectAll("*").remove();
-
-            const svg = d3.select("#network-visualization")
-                .append("svg")
-                .attr("width", width)
-                .attr("height", height);
-
-            const color = d3.scaleOrdinal()
-                .domain([1, 2, 3, 4, 5, 6, 7, 8])
-                .range(["#dc2626", "#d97706", "#059669", "#1e40af", "#7c3aed", "#dc2626", "#0891b2", "#ea580c"]);
-
-            const simulation = d3.forceSimulation(networkData.nodes)
-                .force("link", d3.forceLink(networkData.links).id(d => d.id).distance(25))
-                .force("charge", d3.forceManyBody().strength(-80))
-                .force("center", d3.forceCenter(width / 2, height / 2));
-
-            const link = svg.append("g")
-                .selectAll("line")
-                .data(networkData.links)
-                .enter().append("line")
-                .attr("stroke", d => d.type === "breach" ? "#dc2626" : 
-                                   d.type === "identity" ? "#1e40af" : 
-                                   d.type === "infrastructure" ? "#dc2626" : "#3b82f6")
-                .attr("stroke-opacity", 0.8)
-                .attr("stroke-width", d => Math.sqrt(d.value) * 0.8);
-
-            const node = svg.append("g")
-                .selectAll("circle")
-                .data(networkData.nodes)
-                .enter().append("circle")
-                .attr("r", d => d.type === "Email" ? 6 : 4)
-                .attr("fill", d => color(d.group))
-                .attr("stroke", "#000")
-                .attr("stroke-width", 1)
-                .call(d3.drag()
-                    .on("start", dragstarted)
-                    .on("drag", dragged)
-                    .on("end", dragended));
-
-            const label = svg.append("g")
-                .selectAll("text")
-                .data(networkData.nodes)
-                .enter().append("text")
-                .text(d => d.label.split('\n')[0].length > 15 ? d.label.split('\n')[0].substring(0, 15) + '...' : d.label.split('\n')[0])
-                .attr("font-size", "5px")
-                .attr("font-weight", "bold")
-                .attr("fill", "#e5e7eb")
-                .attr("text-anchor", "middle")
-                .attr("dy", ".35em");
-
-            node.append("title")
-                .text(d => `${d.type}: ${d.label}`);
-
-            simulation
-                .nodes(networkData.nodes)
-                .on("tick", ticked);
-
-            simulation.force("link")
-                .links(networkData.links);
-
-            function ticked() {
-                link
-                    .attr("x1", d => d.source.x)
-                    .attr("y1", d => d.source.y)
-                    .attr("x2", d => d.target.x)
-                    .attr("y2", d => d.target.y);
-
-                node
-                    .attr("cx", d => d.x)
-                    .attr("cy", d => d.y);
-
-                label
-                    .attr("x", d => d.x)
-                    .attr("y", d => d.y);
-            }
-
-            function dragstarted(event, d) {
-                if (!event.active) simulation.alphaTarget(0.3).restart();
-                d.fx = d.x;
-                d.fy = d.y;
-            }
-
-            function dragged(event, d) {
-                d.fx = event.x;
-                d.fy = event.y;
-            }
-
-            function dragended(event, d) {
-                if (!event.active) simulation.alphaTarget(0);
-                d.fx = null;
-                d.fy = null;
-            }
-        }
-
         document.addEventListener('DOMContentLoaded', function() {
             initMatrixEffect();
             
@@ -1715,13 +1425,6 @@
             const canvas = document.getElementById('matrix-canvas');
             canvas.height = window.innerHeight;
             canvas.width = window.innerWidth;
-            
-            // Reinitialize network graph on resize
-            if (document.getElementById('main-application').style.display !== 'none') {
-                setTimeout(() => {
-                    initNetworkGraph();
-                }, 100);
-            }
         });
     </script>
 </body>
